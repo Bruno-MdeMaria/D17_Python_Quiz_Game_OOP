@@ -14,5 +14,6 @@ quiz = QuizBrain(question_bank)
 
 print(question_bank[0].answer)
 
-
+while quiz.still_has_question():
+    quiz.next_question()
 
