@@ -18,3 +18,6 @@ print(question_bank[0].answer)
 while quiz.still_has_question():
       quiz.next_question()
 
+print("You finished the quiz.")
+print(f"Your final score he was: {quiz.score}/{quiz.question_nunber}")
+
