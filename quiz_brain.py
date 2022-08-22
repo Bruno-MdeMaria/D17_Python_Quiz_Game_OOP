@@ -19,12 +19,13 @@ class QuizBrain:
         self.check_answer(user_answer, current_question.answer)  #o metodo next question com o metodo check_answer chamando os parametros user_answer(vem do imput) e a resposta que vem da variavel current_question que será uma lista onde possiu uma chave chamada "answer".
 
         #adiocionado um método(função) para o objeto que vai checar as respostas:
-    def check_asnwer(self, user_answer, correct_answer):
+    def check_answer(self, user_answer, correct_answer):
         if user_answer.lower() == correct_answer.lower():   #verifica se são iguais.
-            self.score +=1                                  #se verdadiro acrescenta na pontuação.
+            self.score +=1                                  #se verdadeiro acrescenta ponto na pontuação(score).
             print("You got it rigth!")
         else: 
             print("Thats wrong.")
         print(f"The correct answer was: {correct_answer}.")
+        print(f"Your current score is: {self.score}/{self.question_nunber}")
 
 

@@ -1,6 +1,7 @@
 from question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain
+import os
 
 question_bank = []                      #Criando um banco de perguntas com objetos 
 for question in question_data:
@@ -15,5 +16,5 @@ quiz = QuizBrain(question_bank)
 print(question_bank[0].answer)
 
 while quiz.still_has_question():
-    quiz.next_question()
+      quiz.next_question()
 
